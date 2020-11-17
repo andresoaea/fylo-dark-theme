@@ -1,0 +1,18 @@
+@import 'base/normalize';
+@import 'base/globals';
+@import 'components/buttons';
+
+body {
+    background: #1c2230;
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+
+    @import 'layout/nav';
+    @import 'layout/section-intro';
+    @import 'layout/section-features';
+    @import 'layout/section-more';
+    @import 'layout/section-testimonials';
+    @import 'layout/section-access';
+    @import 'layout/footer';
+}

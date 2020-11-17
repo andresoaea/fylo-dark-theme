@@ -1,0 +1,95 @@
+footer.site-footer {
+    background: #0d1524;
+    // min-height: 60vh;
+
+    // display: flex;
+    // align-items: center;
+    padding: 10% 0 4% 0;
+
+    i {
+        font-size: 22px !important;
+        // margin-right: 1rem;
+    }
+
+    .container {
+        img {
+            margin-bottom: 1rem;
+        }
+
+        .footer-cols {
+            display: flex;
+            flex-wrap: wrap;
+
+            .footer-col {
+                flex: 1;
+                padding: 0 0.4rem;
+                min-width: 200px;
+                //text-align: center;
+                margin-bottom: 2rem;
+
+                &:first-of-type {
+                    flex: 2;
+                    display: flex;
+                    // justify-content: center;
+
+                    i {
+                        min-width: 1.8rem;
+                    }
+
+                    padding-right: 2rem;
+                }
+
+                // &:nth-of-type(3),
+                // &:nth-of-type(4) {
+                //     min-width: 100px;
+                // }
+
+                &:not(.social) {
+                    ul li {
+                        margin-bottom: 1rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        i {
+                            min-width: 2rem;
+                        }
+                    }
+                }
+
+                &.social {
+                    ul {
+                        display: flex;
+                        justify-content: center;
+
+                        li {
+                            margin: 0 0.2rem;
+                            border: 1px solid #eee;
+                            width: 32px;
+                            height: 32px;
+                            border-radius: 50%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            i {
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: #eee;
+        text-align: center;
+
+        a {
+            color: #41aed1;
+        }
+    }
+}

@@ -1,0 +1,60 @@
+section.section-testimonials {
+    background: #181f2b;
+    padding: 5rem 0;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .testimonial {
+            background: #21293c;
+            padding: 2rem 1.4rem;
+            margin: 0 1rem;
+            border-radius: 4px;
+            position: relative;
+            z-index: 1;
+            display: block;
+            flex: 1;
+            min-width: 200px;
+            max-width: 33.333333%;
+            margin-bottom: 2rem;
+
+            .author {
+                margin-top: 1rem;
+                display: flex;
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 1rem;
+                    border-radius: 50%;
+                }
+
+                p.name {
+                    margin-top: 2px;
+                    font-weight: 600;
+                }
+
+                p.occupation {
+                    font-size: 10px;
+                    margin-top: 4px;
+                }
+            }
+
+            &:first-of-type:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: -28px;
+                left: -9px;
+                width: 44px;
+                height: 44px;
+                background-image: url(/assets/images/bg-quotes.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                z-index: 0;
+            }
+        }
+    }
+}
